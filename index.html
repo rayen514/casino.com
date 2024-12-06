@@ -6,16 +6,17 @@
     <title>Casino Games</title>
     <style>
         body {
-            background-color: #2c3e50;
+            background-color: #000; /* Couleur de fond noire */
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start;
+            min-height: 100vh; /* Assurer que la page prend toute la hauteur */
             color: white;
             flex-direction: column;
+            overflow-x: hidden;
         }
 
         h1 {
@@ -23,6 +24,7 @@
             color: #f39c12;
             margin-bottom: 20px;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
 
         .game-container {
@@ -32,6 +34,8 @@
             gap: 20px;
             max-width: 1000px;
             margin-top: 40px;
+            padding-bottom: 50px; /* Ajouter un espace pour éviter que le bas de la page soit coupé */
+            overflow-y: auto;
         }
 
         .game-card {
@@ -74,6 +78,8 @@
             color: #ecf0f1;
             font-size: 1.2rem;
             text-align: center;
+            padding: 10px;
+            background-color: #2c3e50; /* Fond pour le pied de page */
         }
 
     </style>
